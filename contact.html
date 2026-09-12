@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Pharmacie Cité des Kobourou</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5faf8;
+            color: #333;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .menu a {
+            color: #087f5b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            background: linear-gradient(135deg, #087f5b, #12b886);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .contact h2 {
+            text-align: center;
+            color: #087f5b;
+            font-size: 30px;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .cartes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .carte {
+            background-color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .icone {
+            font-size: 40px;
+        }
+
+        .carte h3 {
+            color: #087f5b;
+        }
+
+        .carte a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background-color: #087f5b;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .whatsapp {
+            background-color: #25D366 !important;
+        }
+
+        .footer {
+            background-color: #075c43;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .menu {
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .menu a {
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .cartes {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="conseils.html">Conseils</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Nous contacter</h1>
+        <p>La Pharmacie Cité des Kobourou est à votre écoute.</p>
+    </header>
+
+    <section class="contact">
+
+        <h2>Nos coordonnées</h2>
+
+        <p class="intro">
+            Une question ou besoin d'un renseignement ?
+            Contactez-nous directement.
+        </p>
+
+        <div class="cartes">
+
+            <div class="carte">
+                <div class="icone">📍</div>
+                <h3>Notre adresse</h3>
+                <p>Sinagourou – Parakou, Bénin</p>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Pharmacie+Cité+des+Kobourou+Parakou+Bénin"
+                   target="_blank">
+                    📍 Voir sur Google Maps
+                </a>
+            </div>
+
+            <div class="carte">
+                <div class="icone">📞</div>
+                <h3>Téléphone</h3>
+                <p>41 67 67 60</p>
+
+                <a href="tel:+22941676760">
+                    📞 Appeler maintenant
+                </a>
+            </div>
+
+            <div class="carte">
+                <div class="icone">💬</div>
+                <h3>WhatsApp</h3>
+                <p>Écrivez-nous directement.</p>
+
+                <a class="whatsapp"
+                   href="https://wa.me/22941676760">
+                    💬 Nous écrire
+                </a>
+            </div>
+
+            <div class="carte">
+                <div class="icone">🕐</div>
+                <h3>Horaires</h3>
+                <p>
+                    Consultez nos horaires avant de vous déplacer.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <h3>PHARMACIE CITÉ DES KOBOUROU</h3>
+        <p>Votre mieux-être, notre souci</p>
+        <p>📍 Sinagourou – Parakou, Bénin</p>
+        <p>📞 41 67 67 60</p>
+        <p>© 2026 Pharmacie Cité des Kobourou</p>
+    </footer>
+
+</body>
+</html>
