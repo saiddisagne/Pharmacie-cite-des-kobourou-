@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Ma première pharmacie</title><style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f4f8f5;
+        color: #222;
+    }
+
+    h1 {
+        background-color: #087f5b;
+        color: white;
+        text-align: center;
+        padding: 25px 10px;
+        margin: 0;
+    }
+
+    h2 {
+        color: #087f5b;
+        margin-top: 25px;
+    }
+
+    p, li {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    body > h2,
+    body > p,
+    body > ul {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+.whatsapp {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 25px auto;
+    padding: 15px;
+    background-color: #25D366;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+    .menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      .menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    }
+      .menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    
+      }
+}
+
+.menu a {
+    color: #087f5b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+   .hero {
+    padding: 70px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #087f5b, #12b886);
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.petit-titre {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.boutons {
+    margin-top: 30px;
+}
+
+.boutons a {
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-appel {
+    background-color: white;
+    color: #087f5b;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+} .services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cartes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.carte {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+}
+
+.icone {
+    font-size: 40px;
+}
+
+.carte h3 {
+    color: #087f5b;
+}
+
+.carte p {
+    font-size: 16px;
+    }@media (max-width: 600px) {
+
+    .menu {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .cartes {
+        grid-template-columns: 1fr;
+    }
+
+    .carte {
+        padding: 20px;
+    }
+
+    .boutons a {
+        display: block;
+        margin: 10px auto;
+        max-width: 300px;
+    }
+}.conseils {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eef7f3;
+}
+
+.intro {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.cartes-conseils {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.conseil {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.conseil span {
+    font-size: 35px;
+}
+
+.conseil h3 {
+    color: #087f5b;
+}.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-cartes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.contact-carte {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.contact-carte span {
+    font-size: 35px;
+}
+
+.contact-carte h3 {
+    color: #087f5b;
+}
+
+.contact-carte a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #087f5b;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}.btn-map {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #087f5b;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.btn-map:hover {
+    opacity: 0.85;
+}.footer {
+    background-color: #075c43;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 15px;
+}
+
+.footer .copyright {
+    margin-top: 25px;
+    font-size: 13px;
+    opacity: 0.8;
+}.topbar {
+    background-color: #075c43;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+    }.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    background-color: white;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    background-color: #087f5b;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.brand h2 {
+    margin: 0;
+    color: #087f5b;
+    font-size: 22px;
+}
+
+.brand p {
+    margin: 5px 0 0;
+    color: #666;
+    }.btn-services {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-services:hover {
+    background-color: white;
+    color: #087f5b;
+    }</style>
+</head>
+
+<body>
+  <div class="topbar">
+    <span>📍 Sinagourou – Parakou</span>
+    <span>📞 2290168594249</span>
+</div>
+
+<nav class="menu">
+    <a href="index.html">Accueil</a>
+    <a href="services.html">Services</a>
+    <a href="conseils.html">Conseils</a>
+    <a href="contact.html">Contact</a>
+</nav>
+<div class="brand">
+    <div class="logo">✚</div>
+
+    <div>
+        <h2>PHARMACIE CITÉ DES KOBOUROU</h2>
+        <p>Votre pharmacie de proximité</p>
+    </div>
+</div><section class="hero">
+
+    <div class="hero-content">
+
+        <p class="petit-titre">VOTRE PHARMACIE DE PROXIMITÉ</p>
+
+        <h2>Votre santé ,notre priorité<br></h2>
+
+        <p>
+            Bienvenue à la Pharmacie Cité des Kobourou.
+            Retrouvez nos services, nos conseils de santé
+            et nos informations pratiques.
+        </p>
+
+        <div class="boutons">
+    <a class="btn-appel" href="tel:+22941676760">
+        📞 Appeler la pharmacie
+    </a>
+
+    <a class="btn-whatsapp" href="https://wa.me/22941676760">
+        💬 Écrire sur WhatsApp
+    </a>
+
+    <a class="btn-services" href="services.html">
+        💊 Découvrir nos services
+    </a>
+        </div>
+</section>
+    <h1 id="accueil">PHARMACIE CITÉ DES KOBOUROU</h1>
+
+    <h2>Votre santé , notre priorité</h2>
+
+    <p>
+        Bienvenue sur le site de notre pharmacie.
+    </p>
+
+    <section class="services">
+
+    <h2 id="services">Nos services</h2>
+
+    <div class="cartes">
+
+        <div class="carte">
+            <div class="icone">💊</div>
+            <h3>Médicaments</h3>
+            <p>
+                Retrouvez vos médicaments et bénéficiez
+                des conseils de votre pharmacien.
+            </p>
+        </div>
+
+        <div class="carte">
+            <div class="icone">🩺</div>
+            <h3>Conseils pharmaceutiques</h3>
+            <p>
+                Des conseils pour vous accompagner
+                dans le bon usage de vos médicaments.
+            </p>
+        </div>
+
+        <div class="carte">
+            <div class="icone">🧴</div>
+            <h3>Produits cosmétiques</h3>
+            <p>
+                Découvrez notre sélection de produits
+                d'hygiène et de soins.
+            </p>
+        </div>
+
+        <div class="carte">
+            <div class="icone">📅</div>
+            <h3>Gardes & horaires</h3>
+            <p>
+                Consultez nos horaires et les informations
+                concernant les gardes.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+<section class="conseils">
+
+    <h2 id="conseils">Conseils de santé</h2>
+
+    <p class="intro">
+        Quelques conseils simples pour mieux prendre soin
+        de votre santé au quotidien.
+    </p>
+
+    <div class="cartes-conseils">
+
+        <div class="conseil">
+            <span>💊</span>
+            <h3>Bien prendre son traitement</h3>
+            <p>
+                Respectez toujours la dose et la durée
+                indiquées par votre professionnel de santé.
+            </p>
+        </div>
+
+        <div class="conseil">
+            <span>⏰</span>
+            <h3>Respecter les horaires</h3>
+            <p>
+                Prenez vos médicaments aux horaires
+                recommandés afin de favoriser leur efficacité.
+            </p>
+        </div>
+
+        <div class="conseil">
+            <span>⚠️</span>
+            <h3>En cas de doute</h3>
+            <p>
+                Demandez conseil à votre pharmacien avant
+                de modifier ou d'arrêter un traitement.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+    <section class="contact">
+
+    <h2 id="contact">Nous contacter</h2>
+
+    <p class="intro">
+        Une question ? Besoin d'un renseignement ?
+        Notre équipe est à votre écoute.
+    </p>
+
+    <div class="contact-cartes">
+
+        <div class="contact-carte">
+            <span>📍</span>
+            <h3>Notre adresse</h3>
+            <p>
+                Sinagourou – Parakou, Bénin
+            </p><a class="btn-map"
+   href="https://www.google.com/maps/search/?api=1&query=Pharmacie+Cité+des+Kobourou+Parakou+Bénin"
+   target="_blank">
+    📍 Voir sur Google Maps
+          </a>
+        </div>
+
+        <div class="contact-carte">
+            <span>📞</span>
+            <h3>Téléphone</h3>
+            <p>
+                01 68 59 42 49
+            </p>
+
+            <a href="tel:+2290168594249">
+                Appeler maintenant
+            </a>
+        </div>
+
+        <div class="contact-carte">
+            <span>💬</span>
+            <h3>WhatsApp</h3>
+            <p>
+                Écrivez-nous directement.
+            </p>
+
+            <a href="https://wa.me/22941676760">
+                Nous écrire
+            </a>
+        </div>
+
+        <div class="contact-carte">
+            <span>🕐</span>
+            <h3>Horaires</h3>
+            <p>
+                Consultez nos horaires
+                avant de vous déplacer.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+  <a class="whatsapp" href="https://wa.me/22941676760">
+    💬 Besoin d'un conseil? Ecrivez-nous
+  </a>
+<footer class="footer">
+
+    <h3>PHARMACIE CITÉ DES KOBOUROU</h3>
+
+    <p>
+        Votre mieux-être, notre souci
+    </p>
+
+    <p>
+        📍 Sinagourou – Parakou, Bénin
+    </p>
+
+    <p>
+        📞 41 67 67 60
+    </p>
+
+    <p class="copyright">
+        © 2026 Pharmacie Cité des Kobourou.
+        Tous droits réservés.
+    </p>
+
+</footer>
+</body>
+
+</html>
