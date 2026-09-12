@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conseils - Pharmacie Cité des Kobourou</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5faf8;
+            color: #333;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .menu a {
+            color: #087f5b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            background: linear-gradient(135deg, #087f5b, #12b886);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .conseils {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .conseils h2 {
+            text-align: center;
+            color: #087f5b;
+            font-size: 30px;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .cartes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .carte {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .icone {
+            font-size: 40px;
+        }
+
+        .carte h3 {
+            color: #087f5b;
+        }
+
+        .footer {
+            background-color: #075c43;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .menu {
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+
+            .menu a {
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            .cartes {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="menu">
+        <a href="index.html">Accueil</a>
+        <a href="services.html">Services</a>
+        <a href="conseils.html">Conseils</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Conseils de santé</h1>
+        <p>Des conseils simples pour mieux prendre soin de votre santé.</p>
+    </header>
+
+    <section class="conseils">
+
+        <h2>Nos conseils pharmaceutiques</h2>
+
+        <p class="intro">
+            Retrouvez quelques recommandations utiles pour favoriser
+            le bon usage de vos médicaments et prendre soin de votre santé.
+        </p>
+
+        <div class="cartes">
+
+            <div class="carte">
+                <div class="icone">💊</div>
+                <h3>Bien prendre son traitement</h3>
+                <p>
+                    Respectez toujours la dose et la durée indiquées
+                    par votre professionnel de santé.
+                </p>
+            </div>
+
+            <div class="carte">
+                <div class="icone">⏰</div>
+                <h3>Respecter les horaires</h3>
+                <p>
+                    Prenez vos médicaments aux horaires recommandés
+                    afin de favoriser leur efficacité.
+                </p>
+            </div>
+
+            <div class="carte">
+                <div class="icone">⚠️</div>
+                <h3>En cas de doute</h3>
+                <p>
+                    Demandez conseil à votre pharmacien avant de
+                    modifier ou d'arrêter un traitement.
+                </p>
+            </div>
+
+            <div class="carte">
+                <div class="icone">💧</div>
+                <h3>Bien s'hydrater</h3>
+                <p>
+                    Pensez à boire suffisamment d'eau au quotidien,
+                    sauf contre-indication médicale.
+                </p>
+            </div>
+
+            <div class="carte">
+                <div class="icone">🧼</div>
+                <h3>Hygiène des mains</h3>
+                <p>
+                    Lavez régulièrement vos mains pour limiter
+                    la transmission de nombreuses infections.
+                </p>
+            </div>
+
+            <div class="carte">
+                <div class="icone">👨‍⚕️</div>
+                <h3>Demander conseil</h3>
+                <p>
+                    Votre pharmacien est disponible pour vous
+                    accompagner dans le bon usage de vos médicaments.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <h3>PHARMACIE CITÉ DES KOBOUROU</h3>
+        <p>Votre mieux-être, notre souci</p>
+        <p>📍 Sinagourou – Parakou, Bénin</p>
+        <p>📞 41 67 67 60</p>
+        <p>© 2026 Pharmacie Cité des Kobourou</p>
+    </footer>
+
+</body>
+</html>
