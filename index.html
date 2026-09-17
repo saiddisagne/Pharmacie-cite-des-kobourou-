@@ -2,10 +2,18 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Ma première pharmacie</title><style>
+<meta name="description" content="Pharmacie Cité des Kobourou à Sinagourou, Parakou. Découvrez nos services, conseils pharmaceutiques et informations pratiques.">
+
+<meta name="keywords" content="Pharmacie Cité des Kobourou, pharmacie Parakou, pharmacie Sinagourou, médicaments Parakou">
+
+<meta name="author" content="Pharmacie Cité des Kobourou">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pharmacie Cité des Kobourou | Parakou</title>
+    <meta charset="UTF-8">
+  <title>pharmacie cité des Kobourou</title><style>
 
     body {
         font-family: Arial, sans-serif;
@@ -158,6 +166,12 @@
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .icone {
@@ -363,16 +377,384 @@
 .btn-services:hover {
     background-color: white;
     color: #087f5b;
-    }</style>
+    }* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p, h1, h2, h3 {
+    overflow-wrap: break-word;
+    }.pourquoi {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.pourquoi h2 {
+    color: #087f5b;
+    font-size: 30px;
+}
+
+.avantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto 0;
+}
+
+.avantage {
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #eef7f3;
+    transition: transform 0.3s ease;
+}
+
+.avantage:hover {
+    transform: translateY(-6px);
+}
+
+.avantage .icone {
+    font-size: 40px;
+}
+
+.avantage h3 {
+    color: #087f5b;
+}
+
+@media (max-width: 600px) {
+    .avantages {
+        grid-template-columns: 1fr;
+    }
+  }.whatsapp-flottant {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #25D366;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+
+    text-decoration: none;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+
+    z-index: 10000;
+}
+
+.whatsapp-flottant:hover {
+    transform: scale(1.1);
+    }.formulaire {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.formulaire h2 {
+    color: #087f5b;
+}
+
+.formulaire input,
+.formulaire textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.formulaire textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.formulaire button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #25D366;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+  }.engagements {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #eef7f3;
+}
+
+.engagements h2 {
+    color: #087f5b;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.engagement-cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.engagement {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.engagement span {
+    font-size: 40px;
+}
+
+.engagement h3 {
+    color: #087f5b;
+}
+
+.engagement p {
+    color: #333333;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .engagement-cartes {
+        grid-template-columns: 1fr;
+    }
+  }.actualites {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.actualites h2 {
+    color: #087f5b;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.actualites-intro {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #555;
+}
+
+.actualites-cartes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.actualite {
+    padding: 25px;
+    background-color: #eef7f3;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.actualite:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.actualite-icone {
+    font-size: 40px;
+}
+
+.actualite h3 {
+    color: #087f5b;
+}
+
+.actualite p {
+    color: #333333;
+    line-height: 1.6;
+}
+
+.actualite a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #087f5b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.actualite a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .actualites-cartes {
+        grid-template-columns: 1fr;
+    }
+}.garde {
+    padding: 50px 20px;
+    background-color: #075c43;
+    color: white;
+}
+
+.garde-contenu {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.garde-icone {
+    font-size: 60px;
+}
+
+.garde-texte {
+    flex: 1;
+}
+
+.garde-texte h2 {
+    color: white;
+    font-size: 30px;
+    margin-top: 0;
+}
+
+.garde-texte p {
+    font-size: 17px;
+}
+
+.garde-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.garde-info div {
+    background-color: rgba(255,255,255,0.12);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.garde-info strong,
+.garde-info span {
+    display: block;
+}
+
+.garde-info span {
+    margin-top: 7px;
+}
+
+@media (max-width: 600px) {
+
+    .garde-contenu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .garde-info {
+        grid-template-columns: 1fr;
+    }
+
+}.btn-partager {
+    display: inline-block;
+    padding: 14px 25px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-partager:hover {
+    background-color: white;
+    color: #087f5b;
+}.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    z-index: 10001;
+    background-color: #087f5b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 60px 15px 15px;
+        background-color: white;
+    }
+
+    .menu.menu-ouvert {
+        display: flex;
+    }
+
+    .menu a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+        font-size: 16px;
+    }
+}</style>
 </head>
 
-<body>
+<a class="whatsapp-flottant"
+   href="https://wa.me/22941676760"
+   target="_blank">
+    💬
+</a><body>
   <div class="topbar">
     <span>📍 Sinagourou – Parakou</span>
     <span>📞 2290168594249</span>
 </div>
 
-<nav class="menu">
+<button class="menu-toggle" onclick="ouvrirMenu()">
+    ☰
+</button>
+
+<nav class="menu" id="menuPrincipal">
     <a href="index.html">Accueil</a>
     <a href="services.html">Services</a>
     <a href="conseils.html">Conseils</a>
@@ -410,7 +792,9 @@
 
     <a class="btn-services" href="services.html">
         💊 Découvrir nos services
-    </a>
+    </a><button class="btn-partager" onclick="partagerSite()">
+    📤 Partager le site
+    </button>
         </div>
 </section>
     <h1 id="accueil">PHARMACIE CITÉ DES KOBOUROU</h1>
@@ -465,8 +849,160 @@
 
     </div>
 
+</section><section class="actualites">
+
+    <h2>Actualités & Conseils santé</h2>
+
+    <p class="actualites-intro">
+        Retrouvez régulièrement nos conseils pour prendre soin de votre santé au quotidien.
+    </p>
+
+    <div class="actualites-cartes">
+
+        <article class="actualite">
+            <div class="actualite-icone">💊</div>
+            <h3>Bien prendre son traitement</h3>
+            <p>
+                Respectez toujours la dose et la durée indiquées
+                par votre professionnel de santé.
+            </p>
+            <a href="conseils.html">Lire le conseil →</a>
+        </article>
+
+        <article class="actualite">
+            <div class="actualite-icone">🩺</div>
+            <h3>Le conseil du pharmacien</h3>
+            <p>
+                En cas de doute concernant votre traitement,
+                demandez conseil à votre pharmacien.
+            </p>
+            <a href="conseils.html">Voir les conseils →</a>
+        </article>
+
+        <article class="actualite">
+            <div class="actualite-icone">❤️</div>
+            <h3>Préserver sa santé</h3>
+            <p>
+                Adoptez chaque jour de bonnes habitudes
+                pour prendre soin de votre santé.
+            </p>
+            <a href="conseils.html">Découvrir →</a>
+        </article>
+
+    </div>
+
+</section><section class="engagements">
+
+    <h2>Nos engagements</h2>
+
+    <div class="engagement-cartes">
+
+        <div class="engagement">
+            <span>🤝</span>
+            <h3>Écoute</h3>
+            <p>
+                Nous sommes attentifs à vos besoins et à vos préoccupations.
+            </p>
+        </div>
+
+        <div class="engagement">
+            <span>💚</span>
+            <h3>Conseils</h3>
+            <p>
+                Nous vous accompagnons pour favoriser le bon usage de vos médicaments.
+            </p>
+        </div>
+
+        <div class="engagement">
+            <span>⭐</span>
+            <h3>Proximité</h3>
+            <p>
+                Une pharmacie proche de vous pour vous accompagner au quotidien.
+            </p>
+        </div>
+
+    </div>
+
+</section><section class="pourquoi">
+
+    <h2>Pourquoi nous choisir ?</h2>
+
+    <p class="intro">
+        La Pharmacie Cité des Kobourou vous accompagne
+        au quotidien avec proximité, écoute et conseils.
+    </p>
+
+    <div class="avantages">
+
+        <div class="avantage">
+            <div class="icone">🤝</div>
+            <h3>Proximité</h3>
+            <p>
+                Une pharmacie proche de vous et à votre écoute.
+            </p>
+        </div>
+
+        <div class="avantage">
+            <div class="icone">👨‍⚕️</div>
+            <h3>Conseils professionnels</h3>
+            <p>
+                Des conseils adaptés pour favoriser le bon usage
+                de vos médicaments.
+            </p>
+        </div>
+
+        <div class="avantage">
+            <div class="icone">❤️</div>
+            <h3>À votre écoute</h3>
+            <p>
+                Nous accordons une attention particulière
+                à vos besoins et à vos préoccupations.
+            </p>
+        </div>
+
+    </div>
+
 </section>
-<section class="conseils">
+<section class="garde">
+
+    <div class="garde-contenu">
+
+        <div class="garde-icone">
+            🚨
+        </div>
+
+        <div class="garde-texte">
+
+            <h2>Pharmacie de garde</h2>
+
+            <p>
+                Consultez les informations relatives au service de garde.
+            </p>
+
+            <div class="garde-info">
+
+                <div>
+                    <strong>📅 Date</strong>
+                    <span>À mettre à jour</span>
+                </div>
+
+                <div>
+                    <strong>🕐 Horaires</strong>
+                    <span>Service de garde</span>
+                </div>
+
+                <div>
+                    <strong>📞 Contact</strong>
+                    <span>41 67 67 60</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section><section class="conseils">
 
     <h2 id="conseils">Conseils de santé</h2>
 
@@ -590,7 +1126,84 @@
         Tous droits réservés.
     </p>
 
-</footer>
-</body>
+<section class="formulaire">
 
-</html>
+    <h2>Écrivez-nous</h2>
+
+    <p>
+        Une question ? Envoyez-nous directement votre message.
+    </p>
+
+    <input type="text" id="nom" placeholder="Votre nom">
+
+    <input type="tel" id="telephone" placeholder="Votre numéro">
+
+    <textarea id="message" placeholder="Votre message"></textarea>
+
+    <button onclick="envoyerWhatsApp()">
+        💬 Envoyer sur WhatsApp
+    </button>
+
+</section></footer>
+<script>
+    function bienvenue() {
+        alert("Bienvenue à la Pharmacie Cité des Kobourou !");
+    }
+</script><script>
+function envoyerWhatsApp() {
+
+    let nom = document.getElementById("nom").value;
+    let telephone = document.getElementById("telephone").value;
+    let message = document.getElementById("message").value;
+
+    let texte =
+        "Bonjour Pharmacie Cité des Kobourou.%0A%0A" +
+        "Nom : " + nom + "%0A" +
+        "Téléphone : " + telephone + "%0A" +
+        "Message : " + message;
+
+    let url = "https://wa.me/22941676760?text=" + texte;
+
+    window.open(url, "_blank");
+}
+</script><script>
+
+function partagerSite() {
+
+    let lien = window.location.href;
+
+    if (navigator.share) {
+
+        navigator.share({
+            title: "Pharmacie Cité des Kobourou",
+            text: "Découvrez le site de la Pharmacie Cité des Kobourou.",
+            url: lien
+        });
+
+    } else {
+
+        navigator.clipboard.writeText(lien);
+
+        alert("Le lien du site a été copié. Vous pouvez maintenant le partager.");
+
+    }
+
+}
+
+</script>
+
+</script><script>
+function ouvrirMenu() {
+    let menu = document.getElementById("menuPrincipal");
+
+    if (menu.classList.contains("menu-ouvert")) {
+        menu.classList.remove("menu-ouvert");
+    } else {
+        menu.classList.add("menu-ouvert");
+    }
+}
+</script></body>
+
+</html><button onclick="bienvenue()">
+    👋 Bienvenue
+</button>
