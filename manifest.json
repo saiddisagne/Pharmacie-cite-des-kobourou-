@@ -1,0 +1,10 @@
+{
+    "name": "Pharmacie Cité des Kobourou",
+    "short_name": "Pharmacie Kobourou",
+    "description": "Site officiel de la Pharmacie Cité des Kobourou à Sinagourou, Parakou.",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#087f5b",
+    "orientation": "portrait"
+}
